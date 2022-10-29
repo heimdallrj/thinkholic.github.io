@@ -1,17 +1,11 @@
 import Head from 'next/head';
 
-import { __pageTitle, __pageDesc } from 'config';
+import { __pageTitle } from 'config';
 
-export default function HeadModule({
-  pageTitle = __pageTitle,
-  pageDesc = __pageDesc,
-}) {
+export default function HeadModule({ pageTitle = __pageTitle }) {
   return (
     <Head>
       <title>{pageTitle}</title>
-      <meta name='description' content={pageDesc} />
-
-      <link rel='icon' href='/favicon.ico' />
     </Head>
   );
 }
