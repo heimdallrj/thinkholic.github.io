@@ -10,6 +10,7 @@ export default function HeadModule({
     <Head>
       <title>{pageTitle}</title>
       <meta name='description' content={pageDesc} />
+
       <link rel='icon' href='/favicon.ico' />
     </Head>
   );

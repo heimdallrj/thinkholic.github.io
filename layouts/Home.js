@@ -1,12 +1,13 @@
+import MasterLayout from 'layouts/Master';
 import Head from 'modules/Head';
-import Header from 'modules/Header';
+
+import { HomeWrap } from 'styles/home.styled';
 
 export default function HomeLayout({ children }) {
   return (
-    <div>
-      <Head />
-      <Header />
-      <div>{children}</div>
-    </div>
+    <MasterLayout>
+      <Head pageTitle='Indi, Software Engineer' />
+      <HomeWrap>{children}</HomeWrap>
+    </MasterLayout>
   );
 }
